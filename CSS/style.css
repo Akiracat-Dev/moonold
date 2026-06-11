@@ -4,6 +4,8 @@ html {
 
   scroll-behavior: smooth;
 
+  user-select: none;
+
 }
 
 body {
@@ -19,7 +21,7 @@ h1 {
   
   color: #222;
   font-family: fantasy , "Source Sans Pro", sans-serif;
-  font-size: 4.5em;
+  font-size: 5em;
   letter-spacing: 5px;
   font-weight: 700;
 
@@ -46,13 +48,22 @@ hr {
 
 }
 
+/*半透明底圖*/
+
 .bigp {
   
-  height: 50px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   text-align: center;
 
+}
+
+.bigp img {
+
+  opacity: 0.3;
+  width: 100%;
+  
 }
 
 .bigp h1 {
@@ -62,11 +73,12 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: aliceblue;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   overflow: hidden;
   
-
 }
+
+/*導覽*/
 
 .nav {
  
@@ -77,14 +89,15 @@ hr {
 
 }
 
+/*原色碼#FF2DC6 rgba(255 ,45 ,198 , 0.5);*/
+
 .box1 {
 
-  background-color: rgba(255 ,45 ,198 , 0.5);
+  background: linear-gradient(to bottom, rgba(234, 62, 141, 0.5), transparent 95%);
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: center;
-
 
 }
 
